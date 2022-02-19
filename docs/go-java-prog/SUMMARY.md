@@ -1,3 +1,4 @@
++   [面向 Java 程序员的 Go 教程](README.md)
 +   [第一部分：看一看 Go](pt1.md)
 	+   [一、简单看一下 Go 和 Java](01.md)
 	+   [二、Java 有而 Go 没有的东西](02.md)
