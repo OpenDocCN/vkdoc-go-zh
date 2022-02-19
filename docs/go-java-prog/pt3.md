@@ -28,7 +28,7 @@ Go Library Survey
 
 这里没有列出所描述的包中的所有类型和功能。请参阅完整的联机文档。这个站点描述了标准包和一些补充包(其中一些是实验性的),并提供了一些到第三方包的链接。场地( [`https://golang.org/pkg/`](https://golang.org/pkg/) )如图 [P3-1](#Fig1) (标准库隐藏)。
 
-![../images/516433_1_En_3_PartFrontmatter/516433_1_En_3_Fig1_HTML.jpg](../images/516433_1_En_3_PartFrontmatter/516433_1_En_3_Fig1_HTML.jpg)
+![img/516433_1_En_3_Fig1_HTML.jpg](img/516433_1_En_3_Fig1_HTML.jpg)
 
 图 P3-1
 
