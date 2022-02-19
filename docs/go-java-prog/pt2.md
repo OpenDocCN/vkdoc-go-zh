@@ -1,4 +1,4 @@
-# 第二部分 Go 语言
+# 第二部分：Go 语言
 
 The Go Language
 
