@@ -28,7 +28,7 @@
     +   [六、数据持久化](docs/go-recipe/6.md)
     +   [七、构建 HTTP 服务器](docs/go-recipe/7.md)
     +   [八、测试 Go 应用](docs/go-recipe/8.md)
-+   [Go 网络编程(README.md)
++   [Go 网络编程(docs/net-prog-go/README.md)
     +   [一、架构](docs/net-prog-go/01.md)
     +   [二、Go 语言概述](docs/net-prog-go/02.md)
     +   [三、套接字级编程](docs/net-prog-go/03.md)
