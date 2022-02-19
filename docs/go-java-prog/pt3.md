@@ -46,7 +46,7 @@ Go 扩展包摘要
 
 包变量通常包含标准化的`error`类型，这些类型可以用来与包中方法返回的错误进行比较。这些值的使用类似于 Java 的标准异常类型(例如，`IllegalArgumentException`或`ArrayIndexOutOfBoundsException`)。例如，`zip`包定义了这些错误:
 
-```
+```go
 var (
       ErrFormat    = errors.New("zip: not a valid zip file")
       ErrAlgorithm = errors.New("zip: unsupported compression algorithm")
@@ -377,7 +377,7 @@ Go 标准包被安排在一个浅层次结构中。一些通用功能被分组�
 
 举个例子(基于一个围棋网站的例子)，`utf8`包允许人们从(UTF-8)字符串中提取符文:
 
-```
+```go
 var text = "The 世界 is a crazy place!"  // world defined in UTF-8
 var runes = make([]rune, 0, len(text))
 for len(text) > 0 {
@@ -393,7 +393,7 @@ for len(text) > 0 {
 
 作为另一个例子，考虑这个简单的方法来测量一些代码的运行时间:
 
-```
+```go
 func TimeIt(timeThis func() error) (dur time.Duration, err error) {
       start := time.Now()
       err = timeThis()
@@ -405,7 +405,7 @@ func TimeIt(timeThis func() error) (dur time.Duration, err error) {
 
 随着
 
-```
+```go
 elapsed, _ := TimeIt(func() (err error) {
       time.Sleep(1 * time.Second)
       return
@@ -417,7 +417,7 @@ elapsed, _ := TimeIt(func() (err error) {
 
 该示例可以用另一种方式重做:
 
-```
+```go
 func TimeIt(timeThis func() error) (dur time.Duration, err error) {
       start := time.Now()  // must declare before use
       defer func(){
