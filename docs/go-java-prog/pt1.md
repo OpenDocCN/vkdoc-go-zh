@@ -6,7 +6,7 @@ First Look at Go
 
 欢迎，未来的地鼠！为发现和丰富的旅程做好准备。
 
-这本书帮助你学习 *Go* (又名 *Golang* <sup>[1](#Fn1)</sup> )编程语言和许多 Go 标准库，以便成为成功的地鼠。本文假设读者没有 Go 知识，面向有经验的 Java 程序员使用。这本书通常使用 Java 特性之间的比较以及这些相似的特性是否/如何存在于 Go 中来组织。
+这本书帮助你学习 *Go* (又名 *Golang* <sup>1</sup> )编程语言和许多 Go 标准库，以便成为成功的地鼠。本文假设读者没有 Go 知识，面向有经验的 Java 程序员使用。这本书通常使用 Java 特性之间的比较以及这些相似的特性是否/如何存在于 Go 中来组织。
 
 本书假设读者已经了解 Java 它不是 Java 教程。本书还假设读者在基本编程概念和过程编程技术方面有基本的能力。
 
@@ -34,7 +34,7 @@ Go 于 2009 年 11 月首次公布。1.0 版本于 2012 年 9 月发布。在 1.
 
 注意在正文中，特别是在顶点部分，提到了源文件名。通常，这些名称不是操作系统文件名，而是以不同的形式显示。一些操作系统要求输入的文件名大小写完全一致，而其他操作系统则不要求。
 
-<aside aria-label="Footnotes" class="FootnoteSection BookFrontmatterFootnoteSection" epub:type="footnotes">Footnotes [1](#Fn1_source)
+<aside aria-label="Footnotes" class="FootnoteSection BookFrontmatterFootnoteSection" epub:type="footnotes">Footnotes 1
 
 除了 Go 和其他用途。还有，官网: [`www.golang.org`](http://www.golang.org)
 

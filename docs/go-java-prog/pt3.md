@@ -12,7 +12,7 @@ Go Library Survey
 
 讨论所有社区提供的 Go 库，比如 Java 社区库，将是一项超人的任务，会产生成千上万的页面。在一本书里也不可能与这些库保持同步。因此，本文不打算这样做。
 
-在某些情况下，Go 标准库具有 Java 标准库所没有的功能。例如，Go 内置了创建生产服务器的支持，尤其是 HTTP 服务器。在 Java 中，这通常需要额外的库，比如来自*Apache*T2 的库。org 或者 Spring *。org* 。所以标准 Go 类似于一个简化功能 *Java 扩展版*(JEE——现在被称为 *Jakarta 扩展版* <sup>[1](#Fn1)</sup> )的环境。
+在某些情况下，Go 标准库具有 Java 标准库所没有的功能。例如，Go 内置了创建生产服务器的支持，尤其是 HTTP 服务器。在 Java 中，这通常需要额外的库，比如来自*Apache*T2 的库。org 或者 Spring *。org* 。所以标准 Go 类似于一个简化功能 *Java 扩展版*(JEE——现在被称为 *Jakarta 扩展版* <sup>1</sup> )的环境。
 
 与 Java 相比，Go 的一个非常薄弱的地方是本机 GUI。Java 有 *AWT* 、 *Swing* 和 *JavaFX* GUI 库，等等。Go 没有类似的东西，但是 Go 有一些库可以帮助 Java 在 JEE 中包含的 web GUIs 生成 HTML(或者 CSS 或者 JSON)。一些 Go 社区成员提供了本地 GUI 支持，但似乎没有一个是完全跨操作系统平台的。此外，许多不是纯粹的 Go，需要 CGo 访问本机操作系统库。
 
@@ -28,7 +28,7 @@ Go Library Survey
 
 一些 Go 库处理跨进程和网络的*远程过程调用* (RPC ),这里就不讨论了。RPC 现在不如 HTTP 访问使用得频繁，HTTP 访问将被包括在内。同样，Go 的邮件支持就不讨论了。
 
-这里没有列出所描述的包中的所有类型和功能。请参阅完整的联机文档。这个站点描述了标准包和一些补充包(其中一些是实验性的),并提供了一些到第三方包的链接。场地( [`https://golang.org/pkg/`](https://golang.org/pkg/) )如图 [P3-1](#Fig1) (标准库隐藏)。
+这里没有列出所描述的包中的所有类型和功能。请参阅完整的联机文档。这个站点描述了标准包和一些补充包(其中一些是实验性的),并提供了一些到第三方包的链接。场地( [`https://golang.org/pkg/`](https://golang.org/pkg/) )如图 P3-1 (标准库隐藏)。
 
 ![img/516433_1_En_3_Fig1_HTML.jpg](img/516433_1_En_3_Fig1_HTML.jpg)
 
@@ -439,7 +439,7 @@ func TimeIt(timeThis func() error) (dur time.Duration, err error) {
 
 提供的函数通常是谓词。
 
-<aside aria-label="Footnotes" class="FootnoteSection BookFrontmatterFootnoteSection" epub:type="footnotes">Footnotes [1](#Fn1_source)
+<aside aria-label="Footnotes" class="FootnoteSection BookFrontmatterFootnoteSection" epub:type="footnotes">Footnotes 1
 
 [T2`https://en.wikipedia.org/wiki/Jakarta_EE`](https://en.wikipedia.org/wiki/Jakarta_EE)
 
