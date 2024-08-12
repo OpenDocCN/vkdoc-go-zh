@@ -12,7 +12,7 @@ Go Library Survey
 
 讨论所有社区提供的 Go 库，比如 Java 社区库，将是一项超人的任务，会产生成千上万的页面。在一本书里也不可能与这些库保持同步。因此，本文不打算这样做。
 
-在某些情况下，Go 标准库具有 Java 标准库所没有的功能。例如，Go 内置了创建生产服务器的支持，尤其是 HTTP 服务器。在 Java 中，这通常需要额外的库，比如来自*Apache*T2 的库。org 或者 Spring *。org* 。所以标准 Go 类似于一个简化功能 *Java 扩展版*(JEE——现在被称为 *Jakarta 扩展版* <sup>1</sup> )的环境。
+在某些情况下，Go 标准库具有 Java 标准库所没有的功能。例如，Go 内置了创建生产服务器的支持，尤其是 HTTP 服务器。在 Java 中，这通常需要额外的库，比如来自*Apache*?? 的库。org 或者 Spring *。org* 。所以标准 Go 类似于一个简化功能 *Java 扩展版*(JEE——现在被称为 *Jakarta 扩展版* <sup>1</sup> )的环境。
 
 与 Java 相比，Go 的一个非常薄弱的地方是本机 GUI。Java 有 *AWT* 、 *Swing* 和 *JavaFX* GUI 库，等等。Go 没有类似的东西，但是 Go 有一些库可以帮助 Java 在 JEE 中包含的 web GUIs 生成 HTML(或者 CSS 或者 JSON)。一些 Go 社区成员提供了本地 GUI 支持，但似乎没有一个是完全跨操作系统平台的。此外，许多不是纯粹的 Go，需要 CGo 访问本机操作系统库。
 
@@ -441,6 +441,6 @@ func TimeIt(timeThis func() error) (dur time.Duration, err error) {
 
 <aside aria-label="Footnotes" class="FootnoteSection BookFrontmatterFootnoteSection" epub:type="footnotes">Footnotes 1
 
-[T2`https://en.wikipedia.org/wiki/Jakarta_EE`](https://en.wikipedia.org/wiki/Jakarta_EE)
+[`https://en.wikipedia.org/wiki/Jakarta_EE`](https://en.wikipedia.org/wiki/Jakarta_EE)
 
  </aside>
