@@ -1,0 +1,507 @@
+# 索引
+
+### A
+- `AdditionalPrinterColumns`
+- `AddToScheme` 函数
+- `AfterSuite` 函数
+- `apiextensions-apiserver` 库
+- API 机制
+  - `RESTMapper`
+    - 查找资源
+    - 实现
+    - 类型到资源
+    - 资源到类型
+  - schema 包
+    - `Scheme`
+      - 转换函数
+      - `convert` 函数
+      - 初始化
+      - 映射
+    - 序列化
+      - 编码与解码
+      - JSON 和 YAML 序列化器
+      - protobuf 包
+      - `Serializer` 接口
+      - time 类型
+      - 工具函数
+- Go 中的 API 资源
+  - 包的内容
+    - `doc.go`
+    - `generated.pb.go` 和 `generated.proto`
+    - `register.go`
+    - `types.go`
+    - `types_swagger_doc_generated.go`
+    - `zz_generated.deepcopy.go`
+  - `core/v1` 包
+    - `ObjectReference`
+    - `ResourceList` 类型
+    - `Taint` 资源
+    - `Toleration` 资源
+    - `core/v1` 包的 `well_known_labels.go`
+  - 源码与导入
+- API 库
+- API 服务器
+- `api/v1alpha1` 目录
+- `ApplyConfigurations`
+- `Apply` 操作
+
+### B
+- `BeforeEach` 和 `AfterEach`
+- `BeforeSuite` 函数
+- `BuildConfigFromFlags` 函数
+
+### C
+- Client-go 库
+  - `Apply` 配置
+  - `Clientset` 创建
+  - 资源的 `Delete` 方法
+  - 错误与状态
+    - `errors.StatusError`
+  - `*fake*` Clientset
+    - `*Action*` 接口
+    - `CreatePod` 函数
+    - etcd 数据库模拟
+    - 系统 `Reactor` 函数
+    - `wantPod`
+  - `FakeDiscovery` 客户端
+    - `*Actions*`
+    - `FakedServerVersion` 实现
+  - 模拟资源
+    - `*fake*` 包
+    - `*fake*` `RESTClient`
+  - 过滤列表结果 *参见* `过滤列表操作结果`, API 机制库
+  - `Get` 方法
+  - 集群内配置
+  - `klog` 库
+  - 资源列表
+  - `metav1.Status` 结构体
+  - 集群外配置
+    - 从内存中的 kubeconfig
+    - 从磁盘上的 kubeconfig
+    - 从个性化 kubeconfig
+    - 从多个 kubeconfig 文件
+  - 资源创建
+  - `RESTClient` 执行，请求
+  - 请求的利用
+  - 以表格形式获取结果
+  - `rest.Interface` 接口
+  - `rest.Request` 结构体
+- `project1` 命名空间
+- `RESTMapper`
+  - `DefaultRESTMapper`
+  - `DeferredDiscoveryRESTMapper`
+  - `PriorityRESTMapper`
+- 服务端 Apply
+  - 使用策略合并补丁进行修补
+  - 从现有资源创建 `ApplyConfiguration`
+  - 从头创建 `ApplyConfiguration`
+  - `Apply` 方法
+  - `ApplyOptions` 结构体
+- 测试目录
+- `Update` 方法
+- `Watch` 方法
+- `Clientset`，自定义资源
+  - `client-gen`
+    - 添加注解
+    - `AddToScheme` 函数
+    - 安装
+    - 运行
+  - `client-go`
+    - `deepcopy-gen`
+    - 添加注解
+    - 安装
+    - 运行
+  - `*fake*Clientset`
+  - Go 结构体
+  - `runtime.Object` 接口
+  - `types.go` 文件
+- `ClusterRole`
+- 列定义
+- 常用类型，Kubernetes 资源
+  - `IntOrString`
+    - 指针包
+    - `Int32Deref` 函数
+    - `Int32Equal` 函数
+    - `Int32` 函数
+    - 引用
+    - 两个相等值
+  - `Quantity`
+    - 定义
+    - Quantity 的 `inf.Dec`
+    - 操作
+    - 字符串解析
+    - 缩放整数
+  - `Time` 类型
+    - 工厂方法
+    - 时间操作
+- `ConfigMapInterface`
+- `ConfigMaps` 方法
+- `ConfigOverrides` 结构体
+- `config/samples` 目录
+- `Containers`
+- `Controller`
+- `ControllerBuilder`
+- `ControllerManagedBy` 函数
+- `Controller` 管理器
+- `controller-runtime` 库
+- 转换函数
+- `corev1.CoreV1Interface`
+- `CoreV1Interface` 接口
+- `CoreV1()` 方法
+- `CRDDirectoryPaths`
+- `Create` 方法
+- `CreateAction` 接口
+- 自定义资源
+- 自定义资源定义 (CRD)
+  - `AdditionalPrinterColumns`
+  - `Client-go` Clientset
+  - `ClusterScoped`
+  - 转换
+  - 定义
+  - 部署
+  - 领域特定资源
+  - `Group` 字段
+  - 机制
+  - `Names` 字段
+  - `NamespaceScoped`
+  - 执行操作
+  - 资源模式
+  - `Scope` 字段
+  - `Spec` 结构体
+  - `Versions` 字段
+- `CustomResourceDefinitionNames`
+- `CustomResourceDefinitionVersion`
+- 自定义资源定义 (CRD)
+
+### D
+- `DeepCopy` 方法
+- `DeferredDiscoveryRESTMapper`
+- `DeleteAllOf` 方法
+- `DeleteCollection` 方法
+- `Delete` 方法
+- `DeleteOption`
+- `Deployment`
+- `DeploymentConditionType` 类型
+- `Deployment` 种类
+- `DeploymentList` 种类
+- `Deployment` 资源
+- `Deprecated`,197
+- 指令，补丁信息
+  - `delete` 指令
+  - `deleteFromPrimitiveList` 指令
+  - `replace` 指令
+  - `setElementOrder` 指令
+- `discovery.DiscoveryClient`
+- `Discovery()` 方法
+- 动态客户端
+  - `Client-go` Clientset
+  - `dynamic.Interface`
+  - `*fake*` 动态客户端
+    - `MyResource` 实例
+    - `NamespaceableResourceInterface`
+    - `Resource(gvr)`
+    - `ResourceInterface` 类型
+  - `dynamic.Interface`
+  - `Unstructured` 和 `UnstructuredList` 类型
+  - `Unstructured` 类型
+  - `dynamicClient`
+
+### E
+- `EnqueueRequestForObject`
+- `envtest.Environment` 结构体
+- `envtest` 包
+  - `controller-runtime` 库
+    - 安装 envtest 二进制文件
+    - 使用 envtest
+- `ErrorIfCRDPathMissing`
+- `errors.StatusError`
+- etcd 数据库
+- `Event` 方法
+- `Event` 资源
+
+### F
+- `*fake*Clientset`
+- `*fake*` 动态客户端
+- `fake.NewSimpleDynamicClient`
+- `*fake*` `RESTClient`
+- 过滤列表操作结果，API 机制库
+  - 设置 `Fieldselector`
+    - 使用 `fields` 包
+      - `OneTermEqualSelector`
+      - `OneTermNotEqualSelector`
+      - 解析 `FieldSelector` 字符串
+      - 键值对集合
+  - 设置 `LabelSelector`
+    - 使用 `labels` 包
+      - 解析 `LabelSelector` 字符串
+      - 键值对集合
+      - 使用需求
+- `func NewForConfig(c *rest.Config) (*Clientset, error)`
+- `func NewForConfigOrDie(c *rest.Config) *Clientset`
+- 函数匹配
+
+### G
+- `GetConfigOrDie()` 函数
+- `GetListRestrictions()` 方法
+- `Get` 方法
+- `GetName()` 方法
+- `GetObject()` 方法
+- `Get` 操作
+- `GetOptions` 结构体
+- `GetWatchRestrictions()` 方法
+- `ginkgo` 套件
+- `go get` 命令
+- 组-版本-种类
+- 组-版本-资源 (`GVR`)
+
+### H
+- `HasLabels` 结构体
+- `$HOME/.kube/config` kubeconfig 文件
+- HTTP 请求
+- HTTP REST API
+- HTTP 动词
+
+### I， J
+- Quantity 的 `inf.Dec`
+- `initContainers`
+- `Int32Deref` 函数
+- `Int32Equal` 函数
+- `Int32` 函数
+- `IntOrString`
+
+### K
+- `klog` 库
+- Kubebuilder 命令
+  - `convertible` 接口
+  - `CRD`
+    - 创建项目
+    - 自定义资源
+    - 安装清单
+    - 操作器
+    - 源代码控制
+    - 项目版本
+    - Webhook
+    - YAML 定义
+  - `kubebuilder create api` 命令
+- Kubebuilder SDK
+- kubeconfig 文件
+- `kubeconfigGetter` 函数
+- `kubectl` 命令
+- `kubectl proxy` 命令
+- Kubelet
+- Kube 代理
+- Kubernetes API
+  - 检查请求
+    - 各种路径的格式
+    - 使用 Protobuf 格式获取结果
+    - 以表格形式
+    - 使用 YAML 格式
+    - GVR
+  - 发起请求
+    - `BOOKMARK` 事件
+    - 资源集合删除
+    - 资源删除
+    - 完整响应与一致性
+    - 资源信息
+    - 检测最后一个数据块
+    - 列出资源
+    - 结果分页
+    - 创建资源
+    - 集群范围内的资源
+    - 特定命名空间中的资源
+    - `resourceVersion`
+    - 重启 Watch 请求
+    - 服务端 Apply 操作
+    - 更新资源
+    - 使用字段选择器过滤资源
+    - 使用 `kubectl proxy` 命令
+    - 使用标签选择器过滤资源
+    - 使用特殊 `*Directives*`
+    - 使用策略合并补丁
+    - 监视资源
+    - Watch 请求
+  - 官方参考文档 *参见* `官方 API 参考文档`
+  - `*OpenAPI 规范*`
+- Kubernetes API 机制库 *参见* `API 机制`
+- Kubernetes API 对象约定
+- Kubernetes API 支持
+- Kubernetes API 动词
+- Kubernetes 架构
+- `kubernetes.Clientset` 类型
+- `kubernetes.Interface`
+- Kubernetes 种类
+- Kubernetes 平台元素
+  - API 服务器
+  - 控制器管理器
+  - etcd 数据库
+  - Kubelet
+  - Kube 代理
+  - 调度器
+- Kubernetes 资源
+- Go 中的 Kubernetes 资源
+  - 导入包
+  - `ObjectMeta` 结构体
+    - 世代
+    - 标签和注解
+    - Name 字段
+    - Namespace 字段
+    - OwnerReference
+    - ResourceVersion
+    - UID
+  - Spec 和 Status
+  - `TypeMeta` 结构体
+  - YAML 清单 *vs.* Go
+- `kustomization` 文件
+
+### L
+- `labels.NewRequirement` 函数
+- `List` 方法
+- `LocalObjectReference`
+- `Log` 对象
+- `Logger` 名称
+- 底层资源
+
+### M
+- `MatchingFieldsSelector`
+- `MatchingLabelsSelector`
+- `Memory` 字段
+- `Merge Patch`
+- `metav1.DryRunAll`
+- `metav1.ObjectMeta`
+- `metav1.Status` 结构体
+- `metav1.TypeMeta`
+- `MyResource`
+  - 定义
+  - 实例
+  - 结构体
+
+### N
+- `NamespaceableResourceInterface`
+- `NamespacedName`
+- `NewNonInteractiveDeferredLoadingClientConfig`
+- `NewSerializerWithOptions` 函数
+- `NewSimpleDynamicClient`
+- `nginx-pod`
+- `NoneConverter` 值
+
+### O
+- `ObjectKey` 值
+- `ObjectReference`
+- 官方 API 参考文档
+- `Deployment` 文档
+- `*Pod*` 资源的文档
+- 单页版操作文档
+- `Pods` 资源名称
+- `OneTermEqualSelector`
+- `OneTermNotEqualSelector`
+- `OpenAPI` 规范
+- OpenAPI v3 模式格式
+- 操作器
+  - 频道源
+  - 创建
+    - 种类结构体
+    - 管理器资源
+    - `rest.Config` 对象
+    - `OwnerReference` 类型
+      - `APIVersion` 和 `Kind`
+      - `BlockOwnerDeletion`
+      - `Controller` 字段
+
+### P， Q
+- `Patch` 方法
+- 补丁信息
+- `Patch` 方法
+- 补丁策略
+- `Pod` 文档
+- `Pod` 种类
+- `PodList` 种类
+- `PodSpec` 字段
+- `PodSpec` 结构体
+- `pod.yaml` 文件
+- 预定义键值对
+- `PrependReactor`
+- `Printer` 列
+- `PROJECT` 文件
+- 传播策略选项
+- Protobuf 格式
+
+### R
+- `Read` 方法
+- `Reconcile` 函数
+  - `envtest` 包 *参见* `envtest` 包
+  - `ginkgo` 套件
+  - 编写测试
+- `Reconcile` 循环
+- 部署函数
+- 实现
+- 操作器
+- 资源角色
+- 编写
+- `Reconcile` 方法
+- `Reconciler` 实现
+- `Reconciler` 接口
+- `Reconciler` 选项
+- `ReplicaSet` 资源
+- `ResourceInterface`
+- `ResourceList` 类型
+- `RESTClient()`
+- `rest.Interface`
+- `RESTConfigFromKubeConfig` 函数
+- `rest.Config` 结构体
+- `RESTMapper`
+  - 查找资源的实现
+  - 种类到资源
+  - 资源到种类
+- `rest.RESTClient`
+
+### S
+- 缩放整数
+- 规模子资源
+- 调度器
+- 服务端 Apply 操作
+- `ServerVersion()` 方法
+- `Status` 子资源
+- `StrategicMergeFrom`
+- 子资源
+
+### T
+- `Taint` 资源
+- `Toleration` 资源
+
+### U
+- `Unstructured` 类型
+- `UnstructuredList` 类型
+  - 创建和转换方法
+  - 定义的获取器/设置器
+    - `ListMetaFields`
+    - `TypeMetaFields`
+  - 与类型化对象
+- `Unstructured` 包
+  - 创建和转换
+  - 方法定义的获取器/设置器
+    - `ObjectMetaFields`
+    - `TypeMetaFields`
+  - 辅助函数
+- `UnstructuredListType`
+- `Unstructured` 类型
+- `Update` 方法
+- `UpdateOption`
+- `UpperCamelCase` 格式
+- 用户 API
+
+### V
+- `Verbosity`
+
+### W， X
+- `WatchAction` 接口
+- 监视资源
+- `Watch` 方法
+- `WebhookConverter` 值
+- `well_known_labels.go` 文件
+- 使用自定义资源
+  - `Clientset` *参见* `Clientset`，自定义资源
+  - 动态客户端
+  - `unstructured` 包 *参见* `Unstructured` 包
+
+### Y, Z
+- YAML 格式
